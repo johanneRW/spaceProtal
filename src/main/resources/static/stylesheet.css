@@ -1,0 +1,90 @@
+body{
+    background-color: #501c10;
+    font-family: 'Tangerine', cursive;
+    color: #af931c;
+}
+
+@media (min-width: 1800px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1800px;
+    }
+}
+.container {
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header{
+
+    height: 17vh;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    background-image: url("/images/border.png");
+    background-size: 22%;
+    color: #af931c;
+    font-size: 275%;;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 2vh;
+}
+.spaceships a{
+    display: inline-block;
+    background-image: url("/images/airship.png");
+    background-repeat: no-repeat;
+    background-size: 38%;
+    height: 9vh;
+    width: 32vw;
+    text-align: right;
+    }
+.reservation a {
+    text-align: left;
+    display: inline-block;
+    background-image: url("images/date.png");
+    background-repeat: no-repeat;
+    background-size: 24%;
+    height: 9vh;
+    width: 30vw;
+}
+
+
+.bigFrame{
+    height: 50vh;
+    background-image: url("/images/bigFrame.png");
+    padding: 5vh;
+    background-repeat: no-repeat;
+    background-size: 68%;
+    background-position: center;
+    margin-right: 3%;
+}
+/*.plaque{
+    background-image: url("/images/simpelPlaque.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 44%;
+    height: 13vh;
+}*/
+.text{
+    margin: 2vh auto;
+    width: 27vw;
+    font-size: 186%;
+
+}
+.text h2{
+    text-align: center;
+}
+
+.detail{
+    height: 63vh;
+    background-image: url("/images/facts.png");
+    padding: 10vh;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    background-position: center;
+    margin-left: 1%;
+
+}
