@@ -1,38 +1,31 @@
 body{
-    background-image:url("images/background-top.png"),url("images/background-bottom.png"),linear-gradient(to bottom, #491c0c, #340715) ;
-    background-attachment: fixed;
-    /*background-color: #501c10;*/
     font-family: 'Tangerine', cursive;
     color: #030303;
+    background-image:url("images/background-top.png"),url("images/background-bottom.png"),linear-gradient(to bottom, #491c0c, #340715) ;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top,bottom;
-
-
 }
 
-@media (min-width: 1800px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1800px;
-    }
+a{
+    color: rgba(196, 144, 41, 0.98);
+    text-decoration: none;
 }
+a:visited{
+    color: rgba(196, 144, 41, 0.98);
+    text-decoration: none;
+}
+
 .container {
     margin: 0 auto;
 }
 
-.content{
-    display: flex;
-    justify-content: space-evenly;
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1800px;
+    }
 }
-
- a{
-     color: rgba(196, 144, 41, 0.98);
-     text-decoration: none;
-}
- a:visited{
-     color: rgba(196, 144, 41, 0.98);
-     text-decoration: none;
- }
 
 .header{
     height: 20vh;;
@@ -46,72 +39,68 @@ body{
 }
 .spaceships a{
     display: inline-block;
+    text-align: center;
+    padding-top: 8vh;
     background-image: url("/images/drawSpaceShip.png");
     background-repeat: no-repeat;
     background-size: 90%;
-    text-align: center;
     background-position: top center;
-    padding-top: 8vh;
 }
-
 .planets a{
     display: inline-block;
+    text-align: center;
+    padding-top: 10vh;
     background-image: url("/images/drawSolarsystem.png");
     background-repeat: no-repeat;
     background-size: 90%;
-    text-align: center;
     background-position: top center;
-    padding-top: 10vh;
 }
-
-
 .logo{
+    height: 19vh;
     background-image: url("/images/logo.png");
     background-size: 68%;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 19vh;
-
 }
 .reservation a {
     display: inline-block;
+    text-align: center;
+    padding-top: 8vh;
     background-image: url("images/drawCalender.png");
     background-repeat: no-repeat;
     background-size: 63%;
-    text-align: center;
     background-position: top center;
-    padding-top: 8vh;
 }
 
-
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
 .bigFrame{
     height: 50vh;
-    background-image: url("/images/bigframe2.png");
     padding: 2vh;
+    margin-right: 2%;
+    background-image: url("/images/bigframe.png");
     background-repeat: no-repeat;
     background-size: 79%;
     background-position: center top;
-    margin-right: 2%;
 }
-
 .bigFrameContent img{
     margin-left: 9vw;
 }
 .plaque{
+    height: 22vh;
+    color: #26020d;
     background-image: url("/images/textPaper.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 62%;
-    height: 22vh;
-    color: #26020d;
 }
-
 .text{
-    margin: -3vh auto;
+    margin: -3vh auto 0 auto;
     width: 22vw;
     font-size: 2vh;
     padding-top: 2vh;
-
 }
 .text h2{
     text-align: center;
@@ -119,14 +108,13 @@ body{
 
 .detail{
     height: 63vh;
-    background-image: url("/images/factsWindow.png");
     padding: 3vh;
+    margin-left: 1%;
+    background-image: url("/images/factsWindow.png");
     background-repeat: no-repeat;
     background-size: 79%;
     background-position: center top;
-    margin-left: 1%;
 }
-
 .detail img{
     margin-left: 6vw;
 }
