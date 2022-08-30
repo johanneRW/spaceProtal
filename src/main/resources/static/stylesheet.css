@@ -1,6 +1,6 @@
 body{
     font-family: 'Tangerine', cursive;
-    color: #030303;
+    color: rgba(196, 144, 41, 0.98);
     background-image:url("images/background-top.png"),url("images/background-bottom.png"),linear-gradient(to bottom, #491c0c, #340715) ;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -27,20 +27,20 @@ a:visited{
     }
 }
 
+
 .header{
-    height: 20vh;;
+    height: 23%;
     text-align: center;
     margin-bottom: 2%;
     margin-top: 4%;
     color: rgba(196, 144, 41, 0.98);
-    font-size: 3vh;
-    padding-top: 2vh;
-    align-items: flex-end;
+    font-size: 1.5vw;
+    align-items: flex-end
 }
 .spaceships a{
     display: inline-block;
     text-align: center;
-    padding-top: 8vh;
+    padding-top: 39%;;
     background-image: url("/images/drawSpaceShip.png");
     background-repeat: no-repeat;
     background-size: 90%;
@@ -49,23 +49,28 @@ a:visited{
 .planets a{
     display: inline-block;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 47%;
     background-image: url("/images/drawSolarsystem.png");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: top center;
 }
-.logo{
-    height: 19vh;
+.logo img{
+    width: 70%;
+    height: auto;
+    vertical-align: unset;
+
+/*    height: 19vh;
     background-image: url("/images/logo.png");
     background-size: 68%;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top center;*/
+
 }
 .reservation a {
     display: inline-block;
     text-align: center;
-    padding-top: 8vh;
+    padding-top: 37%;
     background-image: url("images/drawCalender.png");
     background-repeat: no-repeat;
     background-size: 63%;
@@ -77,47 +82,56 @@ a:visited{
     justify-content: space-evenly;
 }
 .bigFrame{
-    height: 50vh;
-    padding: 2vh;
-    margin-right: 2%;
+    height: 69%;
+    padding: 4% 15% 7% 16%;
     background-image: url("/images/bigframe.png");
     background-repeat: no-repeat;
-    background-size: 79%;
+    background-size: 78%;
     background-position: center top;
 }
+.bigFrameContent{
+    height: 100%;
+}
 .bigFrameContent img{
-    margin-left: 9vw;
+    margin-left: 23%;
+    margin-top: 9%;
+    height: 75%;
+    width: auto;
 }
 .plaque{
-    height: 22vh;
+    height: 26%;
+    padding: 2% 18% 1% 18%;
     color: #26020d;
     background-image: url("/images/textPaper.png");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 62%;
+    background-size: 69%;
 }
 .text{
-    margin: -3vh auto 0 auto;
-    width: 22vw;
-    font-size: 2vh;
-    padding-top: 2vh;
+    font-size: 1vw;
+    padding: 2% 4% 3% 4%;
+    text-align: center;
+    height: 100%;
 }
 .text h2{
     text-align: center;
 }
 
 .detail{
-    height: 63vh;
-    padding: 3vh;
-    margin-left: 1%;
+    height: 63%;
+    padding: 3% 6% 7% 6%;
     background-image: url("/images/factsWindow.png");
     background-repeat: no-repeat;
     background-size: 79%;
     background-position: center top;
 }
 .detail img{
-    margin-left: 6vw;
+    margin-left: 14%;
 }
 .facts img{
-    margin-left: 6vw;
+    margin-left: 14%;
+}
+.responsive {
+    width: 75%;
+    height: auto;
 }
