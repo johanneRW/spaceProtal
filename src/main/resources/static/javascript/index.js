@@ -19,6 +19,19 @@ var updatePlanet = function(planets, planetId) {
     $('.plaque').html('<div class="text"><h2></h2><p></p></div>');  // reset 'plaque' element
     $('.plaque .text p').text(planet['notes']);
     $('.plaque .text h2').text(planet['name']);
+
+
+        $("#planet-mass").text(planet['mass']);
+        $("#planet-diameter").text(planet['diameter']);
+        $("#planet-density").text(planet['density']);
+        $("#planet-gravity").text(planet['gravity']);
+        $("#planet-hoursperday").text(planet['hoursPerDay']);
+        $("#planet-distance").text(planet['distanceFromSun']);
+        $("#planet-meantemp").text(planet['meanTemp']);
+        $("#planet-moons").text(planet['moons']);
+        $("#top-notes").text(planet['notes']);
+        $("#planet-name").text(planet['name']);
+    
 };
 
 var updatePlanetGrid = function(planets) {

@@ -11,7 +11,7 @@
     "meanTemp": 167,
     "moons": 0,
     "notes": "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.",
-    "imageUrl": "images/mars.png",
+    "imageUrl": "images/planets/mercury.png",
     "videoUrl": "https://www.youtube.com/watch?v=0KBjnNuhRHs&ab_channel=NationalGeographic",
     "thumbnailUrl": null,
     "types": [
@@ -33,7 +33,7 @@
     "meanTemp": 464,
     "moons": 0,
     "notes": "Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon.",
-    "imageUrl": "media/planets/venus.jpg",
+    "imageUrl": "images/planets/venus.png",
     "videoUrl": "https://www.youtube.com/watch?v=BvXa1n9fjow&ab_channel=NationalGeographic",
     "thumbnailUrl": null,
     "types": [
@@ -55,7 +55,7 @@
     "meanTemp": 15,
     "moons": 1,
     "notes": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water.",
-    "imageUrl": "media/planets/earth.jpg",
+    "imageUrl": "images/planets/earth.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
@@ -77,7 +77,7 @@
     "meanTemp": -65,
     "moons": 2,
     "notes": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war.",
-    "imageUrl": "media/planets/mars.jpg",
+    "imageUrl": "images/planets/mars.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
@@ -99,7 +99,7 @@
     "meanTemp": -110,
     "moons": 67,
     "notes": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined.",
-    "imageUrl": "media/planets/jupiter.jpg",
+    "imageUrl": "images/planets/jupiter.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
@@ -125,7 +125,7 @@
     "meanTemp": -140,
     "moons": 62,
     "notes": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.",
-    "imageUrl": "media/planets/saturn.jpg",
+    "imageUrl": "images/planets/saturn.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
@@ -151,7 +151,7 @@
     "meanTemp": -195,
     "moons": 27,
     "notes": "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus (Caelus), who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn).",
-    "imageUrl": "media/planets/uranus.jpg",
+    "imageUrl": "images/planets/uranus.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
@@ -177,7 +177,7 @@
     "meanTemp": -200,
     "moons": 14,
     "notes": "Neptune is the eighth planet from the Sun and the farthest known solar planet. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.",
-    "imageUrl": "media/planets/neptune.jpg",
+    "imageUrl": "images/planets/neptune.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
@@ -203,7 +203,7 @@
     "meanTemp": -225,
     "moons": 5,
     "notes": "Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first object discovered in the Kuiper belt and remains the largest known body in that area.",
-    "imageUrl": "media/planets/pluto.jpg",
+    "imageUrl": "images/planets/pluto.png",
     "videoUrl": null,
     "thumbnailUrl": null,
     "types": [
