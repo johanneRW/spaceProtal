@@ -9,8 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="stylesheets/stylesheet.css" rel="stylesheet">
+    <link href="stylesheets/headerStyle.css" rel="stylesheet">
+    <link href="stylesheets/fatcsStyle.css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="javascript/index.js"></script>
 </head>
 
@@ -40,14 +53,22 @@
                 </a>
             </div>
         </div>
+        <div class="row button justify-content-end"">
+            <div class="col-2">
+                <a class="shiny-button" id="apod"></a><p>APOD</p>
+            </div>
+            <div class="col-2">
+                <a class="shiny-button"></a><p>SpaceX Launches</p>
+            </div>
+        </div>
         <div class="content">
-            <div class="focus col-7 float-right">
+            <div class="focus col-6 float-right">
                 <div class="bigFrame">
                     <div class="bigFrameContent">
                         <img class="responsive" src="" />
-                        <!--                    <img class="responsive planetPage" src="/images/mars.png"/>-->
-                        <!--                    <img class="responsive spaceshipPage d-none " src="/images/airship.png"/>-->
-                        <!--                    <img class="responsive issPage d-none " src="/images/iss.png"/>-->
+
+                        <!-- <img class=""/>-->
+
                     </div>
                 </div>
                 <div class="plaque">
@@ -55,31 +76,18 @@
                         <h2></h2>
                         <p></p>
                     </div>
-                    <!--                <div class="text planetPage">-->
-                    <!--                    <h2>Mars</h2>-->
-                    <!--                    Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars-->
-                    <!--                    was—billions of years ago—wetter and warmer, with a thicker atmosphere.-->
-                    <!--                </div>-->
-                    <!--                <div class="text spaceshipPage d-none">-->
-                    <!--                    <h2>Spaceship</h2>-->
-                    <!--                    A ship that can take you to another planet-->
-                    <!--                </div>-->
-                    <!--                <div class="text issPage d-none">-->
-                    <!--                    <h2>ISS</h2>-->
-                    <!--                    placeholder-->
-                    <!--                </div>-->
+                    <!--  <div class="text ">-->
+
                 </div>
 
             </div>
-            <div class="detail col-5 float-left">
+            <div class="detail col-4 float-left">
                 <div class="grid-container"></div>
-                <!--            <div class="options planetPage"> <img class="responsive" src="/images/options.png" /></div>-->
-                <!--            <div class="facts planetPage"> <img class="responsive" src="/images/plantFacts.png"/> </div>-->
-                <!--            <div class="options spaceshipPage d-none" > <img class="responsive" src="/images/airship.png" /></div>-->
-                <!--            <div class="facts spaceshipPage d-none"> <img class="responsive" src="/images/plantFacts.png"/> </div>-->
-                <!--            <div class="options issPage d-none" > <img class="responsive" src="/images/iss.png" /></div>-->
-                <!--            <div class="facts issPage d-none"> <img class="responsive" src="/images/plantFacts.png"/> </div>-->
-                <div class="facts">
+                <!-- <div class="options"> ></div>-->
+
+
+                <!--     Planets  facts  -->
+                <div class="facts planetPage">
                     <h5 id="planet-name"></h5>
                     <table>
                         <tr>
@@ -108,7 +116,7 @@
                         </tr>
                         <tr>
                             <th>Mean temp. (&deg;C)</th>
-                            <td id="planet-meantemp" ></td>
+                            <td id="planet-meantemp"></td>
                         </tr>
                         <tr>
                             <th>Moons</th>
@@ -116,12 +124,109 @@
                         </tr>
                     </table>
                 </div>
-            </div>
+
+                <!--     Spaceships  facts -->
+                <div class="facts spaceshipPage d-none">
+                    <h5 id="spaceship-name"></h5>
+                    <table>
+                        <tr>
+                            <th>Max Passengers</th>
+                            <td id="spaceship-max-passengers"></td>
+                        </tr>
+                        <tr>
+                            <th>Max Speed</th>
+                            <td id="spaceship-max-speed"></td>
+                        </tr>
+                        <tr>
+                            <th>Max Load</th>
+                            <td id="spaceship-max-load"></td>
+                        </tr>
+                        <tr>
+                            <th>Build Date</th>
+                            <td id="spaceship-builddate"></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
+                <!--     ISS   facts -->
+
+                <div class="facts issPage d-none">
+                    <h5>International Space Station (ISS)</h5>
+                    <table>
+                        <tr>
+                            <th>Latitude</th>
+                            <td id="iss-latitude"></td>
+                        </tr>
+                        <tr>
+                            <th>Longitude</th>
+                            <td id="iss-longitude"></td>
+                        </tr>
+                        <tr>
+                            <th>Altitude</th>
+                            <td id="iss-altitude"></td>
+                        </tr>
+                        <tr>
+                            <th>Velocity</th>
+                            <td id="iss-velocity"></td>
+                        </tr>
+                        <tr>
+                            <th>Visibility</th>
+                            <td id="iss-visibility"></td>
+                        </tr>
+                        <tr>
+                            <th>Footprint</th>
+                            <td id="iss-footprint"></td>
+                        </tr>
+                        <tr>
+                            <th>Day num.</th>
+                            <td id="iss-daynum"></td>
+                        </tr>
+                        <tr>
+                            <th>Solar Lon</th>
+                            <td id="iss-solar-lon"></td>
+                        </tr>
+                        <tr>
+                            <th>Solar Lat</th>
+                            <td id="iss-solar-lat"></td>
+                        </tr>
+                        <tr>
+                            <th>Units</th>
+                            <td id="iss-units"></td>
+                        </tr>
+                    </table>
+
+                </div>
+        
 
         </div>
 
 
     </div>
+
+    <div class="nothing"></div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

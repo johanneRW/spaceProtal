@@ -1,0 +1,68 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 23vh;
+    margin-bottom: 0.5vh;
+
+}
+
+.grid-item {
+    font-size: 1vw;
+    text-align: center;
+
+}
+
+.grid-item img {
+    width: 2.5vw;
+}
+
+.grid-item p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.facts h5 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0.5vh;
+    color: rgba(196, 144, 41, 0.98);
+    font-size: 3vh;
+}
+
+table,
+th,
+td {
+    border-bottom: 1px dotted rgba(219, 177, 92, 0.98);
+    border-collapse: collapse;
+    word-wrap: break-word;
+    font-size: 2vh;
+    color: rgba(214, 192, 149, 0.98);
+    width: 20vw; 
+    column-width: 10vw;
+}
+
+
+.facts table td {
+    text-align: right;
+    width: 74%;
+    height: 3vh;
+}
+
+.spaceship.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 23vh;
+    margin-bottom: 0.5vh; 
+}
+
+.iss.grid-container {
+    display: grid;
+    grid-template-columns: auto ;
+    height: 23vh;
+    margin-bottom: 0.5vh; 
+}
+.iss.grid-container img{
+    width: 18vw;
+}

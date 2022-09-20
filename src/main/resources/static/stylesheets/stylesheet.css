@@ -1,0 +1,146 @@
+body {
+    font-family: 'Tangerine', cursive;
+    color: rgba(196, 144, 41, 0.98);
+    background-image: url("/images/background-top.png"), url("/images/background-bottom.png"), linear-gradient(to bottom, #491c0c, #340715);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top, bottom;
+}
+
+a {
+    color: rgba(196, 144, 41, 0.98);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(196, 144, 41, 0.98);
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto 10vh auto;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.focus {
+    height: 79%;
+    margin: 0 3vw 0 0;
+}
+
+.bigFrame {    
+    padding: 4% 22% 4% 22%;
+    background:
+        left top/8vw url("/images/artcorner-tv.png") border-box,
+        right top/8vw url("/images/artcorner-tr.png") border-box,
+        left bottom/8vw url("/images/artcorner-bv.png") border-box,
+        right bottom/8vw url("/images/artcorner-br.png") border-box,
+        linear-gradient(black, black) padding-box;
+    border: 2vh solid transparent;
+    background-repeat: no-repeat;
+    /* 
+    background-image: url("/images/artcorner-tv.png"),url("/images/artcorner-tr.png"),url("/images/artcorner-bv.png"),url("/images/artcorner-br.png");
+    background-color: black; 
+    */
+    /* background-position: left top, right top, left bottom, right bottom; */
+    /* background-size: 8vw;    */
+}
+
+.bigFrameContent {
+    height: 36vh;
+    display: flex;
+}
+
+.bigFrameContent img {
+    margin: 0 auto;
+    height: 50%;
+    width: auto;
+    transform: translateY(50%);
+}
+
+.plaque {
+
+    color: #26020d;
+    background-image: url("/images/textPaper.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    height: 17vh;
+    padding: 2vh 15vw 2vh 15vw;
+
+}
+
+.text {
+    font-size: 1vw;
+    text-align: center;
+    padding: 0vh 0vw;
+    height: 13vh;
+}
+
+.text h2 {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+}
+
+.detail {
+    /* height: 64vh;
+    padding: 4vh 14vw 3vh 2vw;
+    background-image: url("/images/factsWindow2.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain; */
+    margin: 0 0 0 3vw;
+    color: rgba(209, 171, 95, 0.98);
+    background:
+        left top/8vw url("/images/artcorner-tv.png") border-box,
+        right top/8vw url("/images/artcorner-tr.png") border-box,
+        left bottom/8vw url("/images/artcorner-bv.png") border-box,
+        right bottom/8vw url("/images/artcorner-br.png") border-box,
+        linear-gradient(black, black) padding-box;
+    border: 2vh solid transparent;
+    background-repeat: no-repeat;    
+}
+
+
+.responsive {
+    width: 73%;
+    height: auto;
+}
+
+
+.plaque div p {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0vw 0vw 0vh 0vw;
+}
+
+.shiny-button {
+    background: #491c0c;
+    border: 3px solid #392d09;
+    border-radius: 100%;
+    box-shadow: 0px 0 3px #390c00 inset, 0 5px 5px rgb(73 28 12 / 17%), 0 7px rgb(255 255 255 / 25%) inset;
+    cursor: pointer;
+    display: inline-block;
+    height: 3vh;
+    width: 3vh;
+}
+
+.shiny-button:hover {
+    background: #26020d;
+    box-shadow: 0px 1 3px #160000 inset, 0 5px 5px rgb(0 0 0 / 17%), 0 15px rgb(255 255 255 / 32%) inset
+}
+
+.row.button {
+    text-align: center;
+}
+.row.button div p {
+    display: inline-block;
+    font-size: 1.5vh;
+}

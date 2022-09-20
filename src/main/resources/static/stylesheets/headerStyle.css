@@ -1,0 +1,57 @@
+.header {
+    height: 22vh;
+    text-align: center;
+    margin-bottom: 3vh;
+    margin-top: 4vh;
+    color: rgba(196, 144, 41, 0.98);
+    font-size: 1.5vw;
+    align-items: flex-end
+}
+
+.spaceships a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 39%;
+    background-image: url("/images/drawSpaceShip.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: top center;
+}
+
+.planets a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 47%;
+    background-image: url("/images/drawSolarsystem.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: top center;
+}
+
+.logo img {
+    width: 70%;
+    height: auto;
+    vertical-align: unset;
+
+}
+
+.reservation a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 37%;
+    background-image: url("/images/drawCalender.png");
+    background-repeat: no-repeat;
+    background-size: 63%;
+    background-position: top center;
+}
+
+
+.iss a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 42%;
+    background-image: url("/images/drawIss.png");
+    background-repeat: no-repeat;
+    background-size: 72%;
+    background-position: top center;
+}
