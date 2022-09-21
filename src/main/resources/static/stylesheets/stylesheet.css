@@ -2,7 +2,6 @@ body {
     font-family: 'Tangerine', cursive;
     color: rgba(196, 144, 41, 0.98);
     background-image: url("/images/background-top.png"), url("/images/background-bottom.png"), linear-gradient(to bottom, #491c0c, #340715);
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top, bottom;
@@ -43,12 +42,6 @@ a:visited {
         linear-gradient(black, black) padding-box;
     border: 2vh solid transparent;
     background-repeat: no-repeat;
-    /* 
-    background-image: url("/images/artcorner-tv.png"),url("/images/artcorner-tr.png"),url("/images/artcorner-bv.png"),url("/images/artcorner-br.png");
-    background-color: black; 
-    */
-    /* background-position: left top, right top, left bottom, right bottom; */
-    /* background-size: 8vw;    */
 }
 
 .bigFrameContent {
@@ -64,15 +57,13 @@ a:visited {
 }
 
 .plaque {
-
+    background: url("/images/textPaper.png") border-box;
     color: #26020d;
-    background-image: url("/images/textPaper.png");
+    /* background-image: url("/images/textPaper.png"); */
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: contain;
-    height: 17vh;
-    padding: 2vh 15vw 2vh 15vw;
-
+    background-size: 28vw 100%;
+    padding: 2vh 11vw 2vh 11vw;
 }
 
 .text {
@@ -90,13 +81,7 @@ a:visited {
 }
 
 .detail {
-    /* height: 64vh;
-    padding: 4vh 14vw 3vh 2vw;
-    background-image: url("/images/factsWindow2.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: contain; */
-    margin: 0 0 0 3vw;
+     margin: 0 0 0 3vw;
     color: rgba(209, 171, 95, 0.98);
     background:
         left top/8vw url("/images/artcorner-tv.png") border-box,
@@ -123,9 +108,9 @@ a:visited {
 
 .shiny-button {
     background: #491c0c;
-    border: 3px solid #392d09;
+    border: 0.3vh solid rgb(125 95 35 / 98%);
     border-radius: 100%;
-    box-shadow: 0px 0 3px #390c00 inset, 0 5px 5px rgb(73 28 12 / 17%), 0 7px rgb(255 255 255 / 25%) inset;
+    box-shadow: 3px 0px 9px #390c00 inset, 2px 8px 5px rgb(73 28 12 / 17%), 0px 3px rgb(255 255 255 / 25%) inset;
     cursor: pointer;
     display: inline-block;
     height: 3vh;
@@ -137,10 +122,25 @@ a:visited {
     box-shadow: 0px 1 3px #160000 inset, 0 5px 5px rgb(0 0 0 / 17%), 0 15px rgb(255 255 255 / 32%) inset
 }
 
+
 .row.button {
     text-align: center;
 }
 .row.button div p {
     display: inline-block;
     font-size: 1.5vh;
+    color: rgb(125 95 35 / 98%);
+}
+
+.modal-content{
+    background-color: #212529;
+}
+
+.modal img{
+    width: 100%
+}
+
+.modal p{
+    font-size: 2vh;
+    margin-top: 3vh;
 }

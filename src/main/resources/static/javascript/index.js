@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
 
     $(".shiny-button#apod").click(function(){
-        $('#exampleModal').modal('toggle')
+        $('#apodModal').modal('toggle')
         loadAPOD()
     });
 
@@ -115,11 +115,19 @@ var updatePlanetGrid = function(planets) {
         $('.plaque .text h2').text(spaceship['name']);
     
     
-        $("#spaceship-max-passengers").text(spaceship['maxPassengers']);
+        $("#spaceship-crew-pass").text(spaceship['crew']);
         $("#spaceship-max-speed").text(spaceship['maxSpeed']);
-        $("#spaceship-max-load").text(spaceship['maxLoad']);
-        $("#spaceship-builddate").text(spaceship['buildDate']);
+        $("#spaceship-type").text(spaceship['type']);
+        $("#spaceship-propulsion").text(spaceship['propulsion']);
+        $("#spaceship-power").text(spaceship['power']);
+        $("#spaceship-mass").text(spaceship['mass']);
+        $("#spaceship-length").text(spaceship['length']);
+        $("#spaceship-width").text(spaceship['width']);
+        $("#spaceship-height").text(spaceship['height']);
         $("#spaceship-name").text(spaceship['name']);
+        
+
+       
               
         
     };
@@ -159,21 +167,32 @@ var updatePlanetGrid = function(planets) {
         });
     }
     
-    var updateISS = function(ISS) {
-        
+    var updateISS = function(iss) {
+        var note = "Is the largest modular space station currently in low Earth orbit. It is a multinational collaborative project involving five participating space agencies:NASA, Roscosmos, JAXA, ESA, and CSA. The ownership and use of the space station is established by intergovernmental treaties and agreements";
+        var name="The International Space Station (ISS) "
         $('.bigFrameContent img').attr('src',"/images/iss.png");
+
+        $('.plaque').html('<div class="text"><h2></h2><p></p></div>');  // reset 'plaque' element
+        $('.plaque .text p').text(note);
+        $('.plaque .text h2').text(name);
     
     
-        // $("#spaceship-max-passengers").text(spaceship['maxPassengers']);
-        // $("#spaceship-max-speed").text(spaceship['maxSpeed']);
-        // $("#spaceship-max-load").text(spaceship['maxLoad']);
-        // $("#spaceship-builddate").text(spaceship['buildDate']);
-        // $("#spaceship-name").text(spaceship['name']);
+        $("#iss-latitude").text(iss['latitude']);
+        $("#iss-longitude").text(iss['longitude']);
+        $("#iss-altitude").text(iss['altitude']);
+        $("#iss-velocity").text(iss['velocity']);
+        $("#iss-visibility").text(iss['visibility']);
+        $("#iss-footprint").text(iss['footprint']);
+        $("#iss-daynum").text(iss['daynum']);
+        $("#iss-solar-lat").text(iss['solar_lat']);
+        $("#iss-solar-lon").text(iss['solar_lon']);
+        $("#iss-units").text(iss['units']);
+        $("#iss-name").text(iss['name']);
               
         
     };
     
-    var updateISSGrid = function(spaceships) {
+    var updateISSGrid = function(iss) {
         var container = $('.detail .grid-container');
 
         container.html('');
@@ -193,10 +212,18 @@ var updatePlanetGrid = function(planets) {
         response.json().then(APOD => {
            var imageUrl=APOD['url']
            var title=APOD['title']
+           var explanation=APOD['explanation']
+
             var img=$('.modal img')
             img.attr('src',imageUrl)
+
             var imgTitle=$('.modal h5')
             imgTitle.text(title)
+
+            var imgExp=$('.modal p')
+            imgExp.text(explanation)
+            
+
         });
     });
 

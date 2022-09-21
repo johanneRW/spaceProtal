@@ -3,13 +3,15 @@
     display: grid;
     grid-template-columns: auto auto auto;
     height: 23vh;
-    margin-bottom: 0.5vh;
+    margin-bottom: 1.5vh;
+    margin-top: 5vh;
 
 }
 
 .grid-item {
     font-size: 1vw;
     text-align: center;
+    color: rgba(204, 167, 94, 0.98);;
 
 }
 
@@ -22,14 +24,20 @@
     margin-bottom: 0;
 }
 
+.facts table{
+    text-align: center;
+}
 
 .facts h5 {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 1vh;
     margin-top: 0.5vh;
     color: rgba(196, 144, 41, 0.98);
     font-size: 3vh;
 }
+
+
+
 
 table,
 th,
@@ -39,8 +47,12 @@ td {
     word-wrap: break-word;
     font-size: 2vh;
     color: rgba(214, 192, 149, 0.98);
-    width: 20vw; 
+    width: 21vw;
     column-width: 10vw;
+    margin-bottom: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 
@@ -53,15 +65,21 @@ td {
 .spaceship.grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    height: 23vh;
-    margin-bottom: 0.5vh; 
+    height: 26vh;
+    margin-bottom: 1.5vh;
+    margin-top: 4vh;
+}
+.spaceship.grid-container img{
+    width: 8vw;
 }
 
 .iss.grid-container {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     height: 23vh;
-    margin-bottom: 0.5vh; 
+    margin-bottom: 0.5vh;
+    margin-top: 2vh;
+    margin-left: 4vw;
 }
 .iss.grid-container img{
     width: 18vw;
