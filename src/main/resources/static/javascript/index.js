@@ -30,6 +30,10 @@ $(document).ready(function(){
         loadAPOD()
     });
 
+    $(".shiny-button#spacex").click(function(){
+        $('#spacexModal').modal('toggle')
+        loadSpaceX()
+    });
 
 });
 
@@ -206,25 +210,57 @@ var updatePlanetGrid = function(planets) {
 
     var loadAPOD=function(){ 
         fetch(
-        'https://api.nasa.gov/planetary/apod?api_key=0xBWwWrQ3fosBO3mfognfipbqRDMeWUQb40DxwcS',
-        { method: 'GET' }
-    ).then(response => {
-        response.json().then(APOD => {
-           var imageUrl=APOD['url']
-           var title=APOD['title']
-           var explanation=APOD['explanation']
+            'https://api.nasa.gov/planetary/apod?api_key=0xBWwWrQ3fosBO3mfognfipbqRDMeWUQb40DxwcS',
+            { method: 'GET' }
+        ).then(response => {
+            response.json().then(APOD => {
+            var imageUrl=APOD['url']
+            var title=APOD['title']
+            var explanation=APOD['explanation']
 
-            var img=$('.modal img')
-            img.attr('src',imageUrl)
+                var img=$('.modal img')
+                img.attr('src',imageUrl)
 
-            var imgTitle=$('.modal h5')
-            imgTitle.text(title)
+                var imgTitle=$('.modal h5')
+                imgTitle.text(title)
 
-            var imgExp=$('.modal p')
-            imgExp.text(explanation)
-            
+                var imgExp=$('.modal p')
+                imgExp.text(explanation)
+                
 
+            });
         });
-    });
 
-    }
+    };
+
+    var loadSpaceX = function() {
+        $("#missionData").text('');
+
+        fetch(
+            'https://api.spacexdata.com/v5/launches',
+            { method: 'GET' },
+        ).then(response => {
+            response.json().then(launches => {
+                var container = $('select#mission');
+
+                container.text('');
+
+                for (var launch = 0; launch < launches.length; launch++) {
+                    var data = launches[launch];
+                    var name = data['name'];
+                    var option = $('<option value="' + launch + '">' + name + '</option>');
+                    container.append(option);
+                }
+
+                container.change(function(){
+                    var value = $(this).val();
+                    var data = launches[value];
+                    var details = $('<p>' + data['details'] + '</p>');
+                    var launchDate = $('<p>' + data['date_utc'] + '</p>');
+                    $("#missionData").text('');
+                    $("#missionData").append(details);
+                    $("#missionData").append(launchDate);
+                });
+            });
+        });
+    };

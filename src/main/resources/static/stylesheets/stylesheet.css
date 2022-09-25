@@ -70,7 +70,6 @@ a:visited {
     font-size: 1vw;
     text-align: center;
     padding: 0vh 0vw;
-    height: 13vh;
 }
 
 .text h2 {
@@ -143,4 +142,10 @@ a:visited {
 .modal p{
     font-size: 2vh;
     margin-top: 3vh;
+}
+
+.modal button.close {
+    border-radius: 100%;
+    border-color: rgb(194 145 47 / 98%);
+    background: rgb(45 31 116);
 }
