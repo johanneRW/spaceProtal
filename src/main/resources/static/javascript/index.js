@@ -234,6 +234,7 @@ var updatePlanetGrid = function(planets) {
     };
 
     var loadSpaceX = function() {
+        $("#spaceXTitle").text('');
         $("#missionData").text('');
 
         fetch(
@@ -255,11 +256,16 @@ var updatePlanetGrid = function(planets) {
                 container.change(function(){
                     var value = $(this).val();
                     var data = launches[value];
-                    var details = $('<p>' + data['details'] + '</p>');
-                    var launchDate = $('<p>' + data['date_utc'] + '</p>');
+                    var details = $('<p><h4>Details:</h4>' + data['details'] + '</p>');
+                    var launchDate = $('<p><h4>Launch date:</h4>' + data['date_utc'] + '</p>');
+                    var webcast = $('<p><h4>Webcast:</h4> <a href="' + data['links']['webcast'] + '">'+data['links']['webcast']+'</a></p>');
+                    var wikipedia = $('<p><h4>Wikipedia:</h4> <a href="' + data['links']['wikipedia'] + '">'+data['links']['wikipedia']+'</a></p>');
+                    $("#spaceXTitle").text(data['name']);
                     $("#missionData").text('');
                     $("#missionData").append(details);
                     $("#missionData").append(launchDate);
+                    $("#missionData").append(webcast);
+                    $("#missionData").append(wikipedia);
                 });
             });
         });
