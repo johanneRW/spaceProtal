@@ -1,0 +1,29 @@
+.shiny-button {
+    background: #491c0c;
+    box-shadow: 3px 0px 9px #390c00 inset, 2px 8px 5px rgb(73 28 12 / 17%), 0px 3px rgb(255 255 255 / 25%) inset;
+    /*background: #083d24;
+    box-shadow: 3px 0px 9px #030806 inset, 2px 8px 5px rgb(73 28 12 / 17%), 0px 3px rgb(255 255 255 / 25%) inset;*/
+    border: 0.3vh solid rgb(125 95 35 / 98%);
+    border-radius: 100%;
+    
+    cursor: pointer;
+    display: inline-block;
+    height: 3vh;
+    width: 3vh;
+}
+
+.shiny-button:hover {
+    background: #26020d;
+    /*background:#0a3521;*/
+    box-shadow: 0px 1 3px #160000 inset, 0 5px 5px rgb(0 0 0 / 17%), 0 15px rgb(255 255 255 / 32%) inset
+}
+
+
+.row.button {
+    text-align: center;
+}
+.row.button div p {
+    display: inline-block;
+    font-size: 1.5vh;
+    color: rgb(125 95 35 / 98%);
+}

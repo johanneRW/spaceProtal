@@ -47,7 +47,7 @@ td {
     word-wrap: break-word;
     font-size: 2vh;
     color: rgba(214, 192, 149, 0.98);
-    /*width: 21vw;*/
+    width: 21vw;
     column-width: 10vw;
     margin-bottom: 4vh;
     margin-left: auto;

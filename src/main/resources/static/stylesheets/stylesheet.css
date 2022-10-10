@@ -1,7 +1,8 @@
 body {
     font-family: 'Tangerine', cursive;
     color: rgba(196, 144, 41, 0.98);
-    background-image: url("/images/background-top.png"), url("/images/background-bottom.png"), linear-gradient(to bottom, #491c0c, #340715);
+    background-image: url("/images/background-top.png"), url("/images/background-bottom.png"), linear-gradient(to bottom, #491c0c, #360212);
+    /*background-image: url(/images/background-top.png), url(/images/background-bottom.png), linear-gradient(to bottom, #06361f, #031d11);*/
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top, bottom;
@@ -104,7 +105,7 @@ a:visited {
     padding: 0vw 0vw 0vh 0vw;
 }
 
-.shiny-button {
+/*.shiny-button {
     background: #491c0c;
     border: 0.3vh solid rgb(125 95 35 / 98%);
     border-radius: 100%;
@@ -147,4 +148,4 @@ a:visited {
     border-radius: 100%;
     border-color: rgb(194 145 47 / 98%);
     background: rgb(25 18 59 / 60%);;
-}
+}*/

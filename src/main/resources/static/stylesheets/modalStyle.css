@@ -1,0 +1,24 @@
+
+.modal-content{
+    background-color: #0e2236;
+}
+
+.modal img{
+    width: 100%
+}
+
+.modal p{
+    font-size: 2vh;
+    margin-top: 3vh;
+}
+
+.modal button.close {
+    border-radius: 100%;
+    border-color: rgb(194 145 47 / 98%);
+    background: rgb(25 18 59 / 60%);;
+}
+
+.modal-content.reservationModal{
+    background-color: #360e10;
+
+}

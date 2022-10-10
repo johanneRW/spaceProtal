@@ -35,6 +35,11 @@ $(document).ready(function(){
         loadSpaceX()
     });
 
+    $(".reservation a").click(function(){
+        $('#reservationModal').modal('toggle')
+        loadReservation()
+    });
+
 });
 
 // Plantes
@@ -269,4 +274,8 @@ var updatePlanetGrid = function(planets) {
                 });
             });
         });
+    };
+
+    var loadReservation= function() {
+       
     };
