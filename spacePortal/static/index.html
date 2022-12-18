@@ -13,7 +13,7 @@
     <link href="stylesheets/headerStyle.css" rel="stylesheet">
     <link href="stylesheets/fatcsStyle.css" rel="stylesheet">
     <link href="stylesheets/modalStyle.css" rel="stylesheet">
-    <link href="stylesheets/buttonStyle.css" rel="stylesheet">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -27,6 +27,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="javascript/index.js"></script>
+    <script src="javascript/plantes.js"></script>
+    <script src="javascript/spaceships.js"></script>
+    <script src="javascript/ISS.js"></script>
+    <script src="javascript/APOD.js"></script>
+    <script src="javascript/spaceX.js"></script>
+    <script src="javascript/resrevation.js"></script>
 </head>
 
 <body>
@@ -70,7 +76,6 @@
             <div class="bigFrame">
                 <div class="bigFrameContent">
                     <img class="responsive" src="" />
-
                     <!-- <img class=""/>-->
 
                 </div>
@@ -175,7 +180,6 @@
 
 
             <!--     ISS   facts -->
-
             <div class="facts issPage d-none">
                 <h5>International Space Station (ISS)</h5>
                 <table>
@@ -225,7 +229,7 @@
         </div>
     </div>
 
-
+    <!--     APOD modal-->
     <div class="modal fade" id="apodModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -240,6 +244,7 @@
                     <div>
                         <p></p>
                     </div>
+                    <label for="APODdate">Select different date </label>
                     <input type="date" id="APODdate"><br>
 
                 </div>
@@ -247,48 +252,49 @@
         </div>
     </div>
 
+    <!--     SpaceX modal-->
     <div class="modal fade" id="spacexModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="spaceXTitle"></h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <select id="mission">
-                </select>
-                <div id="missionData"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content reservationModal">
-            <div class="modal-header">
-                <h3 class="modal-title" id="reservationTitle"></h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Select date and time: </p>
-                <input type="datetime-local" id="resDate"><br>
-                <p>Select spaceship: </p>
-                <select id="resSpaceship">
-                </select>
-                <p>Select destinations: </p>
-                <select id="resPlanets">
-                </select>
-                <button  id="reservationButton"class="res-button">Make reservation</button>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="spaceXTitle"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <select id="mission">
+                    </select>
+                    <div id="missionData"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!--     Resrvation modal-->
+    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content reservationModal">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="reservationTitle"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span>Select date and time: </span><br>
+                    <input type="datetime-local" id="resDate"><br>
+                    <span>Select spaceship: </span><br>
+                    <select id="resSpaceship">
+                    </select><br>
+                    <span>Select destinations: </span><br>
+                    <select id="resPlanets">
+                    </select><br>
+                    <button id="reservationButton" class="res-button">Make reservation</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
