@@ -12,7 +12,7 @@ const ISS = {
     _updateISS: function (iss) {
         var note = "Is the largest modular space station currently in low Earth orbit. It is a multinational collaborative project involving five participating space agencies:NASA, Roscosmos, JAXA, ESA, and CSA. The ownership and use of the space station is established by intergovernmental treaties and agreements";
         var name = "The International Space Station (ISS) "
-        $('.bigFrameContent img').attr('src', "/images/iss.png");
+        $('.bigFrameContent img').attr('src', "images/iss.png");
 
         $('.plaque').html('<div class="text"><h2></h2><p></p></div>');  // reset 'plaque' element
         $('.plaque .text p').text(note);
@@ -41,7 +41,7 @@ const ISS = {
         container.addClass('iss')
         container.removeClass('spaceship')
 
-        container.append('<img src="/images/iss.png">')
+        container.append('<img src="images/iss.png">')
 
     },
     init: function () {

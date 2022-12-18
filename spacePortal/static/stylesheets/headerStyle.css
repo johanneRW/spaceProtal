@@ -12,7 +12,7 @@
     display: inline-block;
     text-align: center;
     padding-top: 39%;
-    background-image: url("/images/drawSpaceShip.png");
+    background-image: url("../images/drawSpaceShip.png");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: top center;
@@ -22,7 +22,7 @@
     display: inline-block;
     text-align: center;
     padding-top: 47%;
-    background-image: url("/images/drawSolarsystem.png");
+    background-image: url("../images/drawSolarsystem.png");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: top center;
@@ -39,7 +39,7 @@
     display: inline-block;
     text-align: center;
     padding-top: 37%;
-    background-image: url("/images/drawCalender.png");
+    background-image: url("../images/drawCalender.png");
     background-repeat: no-repeat;
     background-size: 63%;
     background-position: top center;
@@ -50,7 +50,7 @@
     display: inline-block;
     text-align: center;
     padding-top: 42%;
-    background-image: url("/images/drawIss.png");
+    background-image: url("../images/drawIss.png");
     background-repeat: no-repeat;
     background-size: 72%;
     background-position: top center;

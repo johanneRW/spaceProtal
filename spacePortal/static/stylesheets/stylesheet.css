@@ -1,7 +1,7 @@
 body {
     font-family: 'Tangerine', cursive;
     color: rgba(196, 144, 41, 0.98);
-    background-image: url("/images/background-top.png"), url("/images/background-bottom.png"), linear-gradient(to bottom, #491c0c, #360212);
+    background-image: url("../images/background-top.png"), url("../images/background-bottom.png"), linear-gradient(to bottom, #491c0c, #360212);
     /*background-image: url(/images/background-top.png), url(/images/background-bottom.png), linear-gradient(to bottom, #06361f, #031d11);*/
     background-repeat: no-repeat;
     background-size: 100%;
@@ -36,10 +36,10 @@ a:visited {
 .bigFrame {    
     padding: 4% 22% 4% 22%;
     background:
-        left top/8vw url("/images/artcorner-tv.png") border-box,
-        right top/8vw url("/images/artcorner-tr.png") border-box,
-        left bottom/8vw url("/images/artcorner-bv.png") border-box,
-        right bottom/8vw url("/images/artcorner-br.png") border-box,
+        left top/8vw url("../images/artcorner-tv.png") border-box,
+        right top/8vw url("../images/artcorner-tr.png") border-box,
+        left bottom/8vw url("../images/artcorner-bv.png") border-box,
+        right bottom/8vw url("../images/artcorner-br.png") border-box,
         linear-gradient(black, black) padding-box;
     border: 2vh solid transparent;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ a:visited {
 }
 
 .plaque {
-    background: url("/images/textPaper.png") border-box;
+    background: url("../images/textPaper.png") border-box;
     color: #26020d;
     background-repeat: no-repeat;
     background-position: center top;
@@ -83,10 +83,10 @@ a:visited {
      margin: 0 0 0 3vw;
     color: rgba(209, 171, 95, 0.98);
     background:
-        left top/8vw url("/images/artcorner-tv.png") border-box,
-        right top/8vw url("/images/artcorner-tr.png") border-box,
-        left bottom/8vw url("/images/artcorner-bv.png") border-box,
-        right bottom/8vw url("/images/artcorner-br.png") border-box,
+        left top/8vw url("../images/artcorner-tv.png") border-box,
+        right top/8vw url("../images/artcorner-tr.png") border-box,
+        left bottom/8vw url("../images/artcorner-bv.png") border-box,
+        right bottom/8vw url("../images/artcorner-br.png") border-box,
         linear-gradient(black, black) padding-box;
     border: 2vh solid transparent;
     background-repeat: no-repeat;    
