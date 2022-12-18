@@ -1,5 +1,5 @@
 const Planets = {
-    
+
     _loadPlanets: async function () {
         const response = await fetch(
             'json/planets.json',
@@ -10,7 +10,7 @@ const Planets = {
         Planets._updatePlanetGrid(planets);
     },
     _updatePlanet: function (planets, planetId) {
-        var planet = planets[planetId];
+        let planet = planets[planetId];
 
         $('.bigFrameContent img').attr('src', planet['imageUrl']);
 
@@ -31,7 +31,7 @@ const Planets = {
         $("#planet-name").text(planet['name']);
     },
     _updatePlanetGrid: function (planets) {
-        var container = $('.detail .grid-container');
+        let container = $('.detail .grid-container');
 
         container.html('');
         container.addClass('planet')
@@ -39,14 +39,14 @@ const Planets = {
         container.removeClass('spaceship')
 
         for (let i = 0; i < planets.length; i++) {
-            var imageUrl = planets[i]['imageUrl'];
-            var name = planets[i]['name'];
-            var options = $('<a href="#" data-id="' + i + '"><div class="grid-item"><img class="responsive" src="' + imageUrl + '" /><p>' + name + '</p></div></a>');
+            let imageUrl = planets[i]['imageUrl'];
+            let name = planets[i]['name'];
+            let options = $('<a href="#" data-id="' + i + '"><div class="grid-item"><img class="responsive" src="' + imageUrl + '" /><p>' + name + '</p></div></a>');
             container.append(options);
         }
 
         $('a', container).click(function () {
-            var id = $(this).data('id');
+            let id = $(this).data('id');
             Planets._updatePlanet(planets, id);
         });
     },

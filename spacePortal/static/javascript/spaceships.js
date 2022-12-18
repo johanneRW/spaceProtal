@@ -10,7 +10,7 @@ const Spaceships = {
         Spaceships._updateSpaceshipGrid(spaceships);
     },
     _updateSpaceship: function (spaceships, spaceshipId) {
-        var spaceship = spaceships[spaceshipId];
+        let spaceship = spaceships[spaceshipId];
 
         $('.bigFrameContent img').attr('src', spaceship['imageUrl']);
 
@@ -32,7 +32,7 @@ const Spaceships = {
 
     },
     _updateSpaceshipGrid: function (spaceships) {
-        var container = $('.detail .grid-container');
+        let container = $('.detail .grid-container');
 
         container.html('');
         container.removeClass('planets')
@@ -40,14 +40,14 @@ const Spaceships = {
         container.addClass('spaceship')
 
         for (let i = 0; i < spaceships.length; i++) {
-            var imageUrl = spaceships[i]['imageUrl'];
-            var name = spaceships[i]['name'];
-            var options = $('<a href="#" data-id="' + i + '"><div class="grid-item"><img class="responsive" src="' + imageUrl + '" /><p>' + name + '</p></div></a>');
+            let imageUrl = spaceships[i]['imageUrl'];
+            let name = spaceships[i]['name'];
+            let options = $('<a href="#" data-id="' + i + '"><div class="grid-item"><img class="responsive" src="' + imageUrl + '" /><p>' + name + '</p></div></a>');
             container.append(options);
         }
 
         $('a', container).click(function () {
-            var id = $(this).data('id');
+            let id = $(this).data('id');
             Spaceships._updateSpaceship(spaceships, id);
         });
     },

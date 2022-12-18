@@ -10,10 +10,10 @@ const Reservation = {
 
         container.text('');
 
-        for (var planet = 0; planet < planets.length; planet++) {
-            var data = planets[planet];
-            var name = data['name'];
-            var option = $('<option value="' + planet + '">' + name + '</option>');
+        for (let planet = 0; planet < planets.length; planet++) {
+            let data = planets[planet];
+            let name = data['name'];
+            let option = $('<option value="' + planet + '">' + name + '</option>');
             container.append(option);
         }
 
@@ -26,18 +26,18 @@ const Reservation = {
 
         container.text('');
 
-        for (var spaceship = 0; spaceship < spaceships.length; spaceship++) {
-            var data = spaceships[spaceship];
-            var name = data['name'];
-            var option = $('<option value="' + spaceship + '">' + name + '</option>');
+        for (let spaceship = 0; spaceship < spaceships.length; spaceship++) {
+            let data = spaceships[spaceship];
+            let name = data['name'];
+            let option = $('<option value="' + spaceship + '">' + name + '</option>');
             container.append(option);
         }
 
         var reservationButton = $('#reservationButton');
         reservationButton.click(function () {
-            var resDate = $('#resDate').val();
-            var resSpaceship = $('#resSpaceship').val();
-            var resPlanet = $('#resPlanets').val();
+            let resDate = $('#resDate').val();
+            let resSpaceship = $('#resSpaceship').val();
+            let resPlanet = $('#resPlanets').val();
             //Da der ikke er en backend pt, udskrives der i consolen 
 
             console.log(resDate, resSpaceship, resPlanet);
@@ -48,7 +48,7 @@ const Reservation = {
             // )
 
             // });
-            var reservationModal = $('#reservationModal');
+            let reservationModal = $('#reservationModal');
             reservationModal.modal('hide');
         });
 

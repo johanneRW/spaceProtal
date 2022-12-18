@@ -3,16 +3,15 @@ const APOD = {
     init: function () {
         $(".shiny-button#apod").click(async function () {
             $('#apodModal').modal('toggle')
-            var today = new Date();
+            let today = new Date();
             await APOD._loadAPOD(today.toISOString().split('T')[0]);
-            var APODdate = $('#APODdate');
+            let APODdate = $('#APODdate');
             APODdate.change(async function () {
-                var dateValue = $(this).val();
+                let dateValue = $(this).val();
                 await APOD._loadAPOD(dateValue)
             })
         })
     },
-
 
 
     _loadAPOD: async function (date) {
@@ -20,20 +19,20 @@ const APOD = {
             'https://api.nasa.gov/planetary/apod?api_key=0xBWwWrQ3fosBO3mfognfipbqRDMeWUQb40DxwcS&date=' + date,
             { method: 'GET' }
         );
-    
+
         const APODData = await response.json()
 
-        var imageUrl = APODData['url']
-        var title = APODData['title']
-        var explanation = APODData['explanation']
+        let imageUrl = APODData['url']
+        let title = APODData['title']
+        let explanation = APODData['explanation']
 
-        var img = $('.modal img')
+        let img = $('.modal img')
         img.attr('src', imageUrl)
 
-        var imgTitle = $('.modal h5')
+        let imgTitle = $('.modal h5')
         imgTitle.text(title)
 
-        var imgExp = $('.modal p')
+        let imgExp = $('.modal p')
         imgExp.text(explanation)
 
     }
